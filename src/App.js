@@ -1,3 +1,6 @@
+// useState
+import { useState } from "react";
+
 // React Router Dom
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
@@ -10,11 +13,33 @@ import WellBeing from "./pages/Well-being";
 import Navigation from "./components/Navigation/Navigation";
 import Footer from "./components/Footer/Footer";
 
-let userData = {
-  username: "User",
-};
-
 function App() {
+  // User Data
+  const [userData, setUserData] = useState({
+    username: "User",
+    trainer: "Trainer",
+  });
+
+  // Update All User Data
+  function updateAll() {
+    console.log("Updated all");
+    setUserData({ ...userData });
+  }
+
+  const [test, setTest] = useState("");
+
+  function handleChange(e) {
+    console.log(e.target.value);
+    setTest(e.target.value);
+  }
+
+  function changeUsername(e) {
+    e.preventDefault();
+    console.log(`Changed username to '${test}'.`);
+    userData.username = test;
+    updateAll();
+  }
+
   return (
     <div className="App">
       <Navigation />
@@ -27,7 +52,17 @@ function App() {
         <Route path="/well-being" element={<WellBeing />} />
       </Routes>
 
-      <p>{userData.username}</p>
+      <form>
+        <input
+          value={test}
+          placeholder="Enter name..."
+          onChange={handleChange}
+        ></input>
+        <button onClick={(e) => changeUsername(e)}>Submit</button>
+      </form>
+
+      <h1>{test}</h1>
+      <h1>{userData.username}</h1>
     </div>
   );
 }
