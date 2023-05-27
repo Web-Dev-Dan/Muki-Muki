@@ -6,6 +6,10 @@
   left: 0;
 }
 
+.page-footer.container {
+  padding-bottom: 4rem;
+}
+
 .page-footer__button-container {
   display: flex;
   justify-content: space-between;
