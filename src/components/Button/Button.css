@@ -8,6 +8,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  user-select: none;
+}
+
+.button:active {
+  background-color: transparent;
 }
 
 .button--col {
