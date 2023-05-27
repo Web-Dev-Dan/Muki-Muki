@@ -1,7 +1,9 @@
+import Navigation from "./components/Navigation/Navigation";
+
 function App() {
   return (
     <div className="App">
-      <p>Welcome to Muki Muki!</p>
+      <Navigation />
     </div>
   );
 }
