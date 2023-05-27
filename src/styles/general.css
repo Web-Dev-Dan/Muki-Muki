@@ -1,0 +1,16 @@
+/* Container */
+.container {
+  padding: 2rem;
+}
+
+.container__inner {
+  /* border: 1px solid red; */
+  max-width: 100rem;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* Link */
+.link {
+  text-decoration: none;
+}

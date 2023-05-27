@@ -1,0 +1,25 @@
+.page-footer {
+  background-color: var(--color--white);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.page-footer__button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.page-footer__button-container > * {
+  flex: 1;
+}
+
+.page-footer .button {
+  opacity: 0.5;
+}
+
+.page-footer .button--current {
+  opacity: 1;
+}
