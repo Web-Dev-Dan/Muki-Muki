@@ -1,6 +1,21 @@
 /* Container */
 .container {
+  font-size: 1.4rem;
   padding: 2rem;
+}
+
+.home-container,
+.calendar-page-container {
+  /* background-color: rgb(247, 247, 247); */
+  background-color: var(--color--white);
+  padding-top: 10rem;
+  min-height: calc(100vh - 6rem);
+}
+
+.page-container {
+  background-color: lightblue;
+  padding-top: 10rem;
+  min-height: calc(100vh - 15rem);
 }
 
 .container__inner {
@@ -13,4 +28,27 @@
 /* Link */
 .link {
   text-decoration: none;
+}
+
+/* Header */
+.container__header {
+  color: var(--color--primary);
+  font-size: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.container__header:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.container__header:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  background-color: var(--color--primary);
 }

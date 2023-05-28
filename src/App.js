@@ -1,5 +1,6 @@
 // useState
 import { useState } from "react";
+import Calendar from "react-calendar";
 
 // React Router Dom
 import { Route, Routes } from "react-router-dom";
@@ -8,6 +9,7 @@ import Fitness from "./pages/Fitness";
 import Diet from "./pages/Diet";
 import Hydration from "./pages/Hydration";
 import WellBeing from "./pages/Well-being";
+import MyCalendar from "./pages/MyCalendar";
 
 // Components
 import Navigation from "./components/Navigation/Navigation";
@@ -50,9 +52,10 @@ function App() {
         <Route path="/diet" element={<Diet />} />
         <Route path="/hydration" element={<Hydration />} />
         <Route path="/well-being" element={<WellBeing />} />
+        <Route path="/my-calendar" element={<MyCalendar />} />
       </Routes>
 
-      <form>
+      {/* <form>
         <input
           value={test}
           placeholder="Enter name..."
@@ -63,6 +66,10 @@ function App() {
 
       <h1>{test}</h1>
       <h1>{userData.username}</h1>
+
+      <div className="calendar-container">
+        <Calendar />
+      </div> */}
     </div>
   );
 }

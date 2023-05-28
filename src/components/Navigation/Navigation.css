@@ -1,9 +1,15 @@
 /* --- Navigation --- */
 .nav {
-  /* background-color: #ed7d31; */
-  background-color: #ffffff;
-  height: 10rem;
+  /* background-color: var(--color--primary); */
+  background-color: var(--color--white);
+  width: 100%;
+  height: 8rem;
   padding: 0 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  /* border: 1px solid blue; */
 }
 
 .nav__inner {
@@ -20,7 +26,7 @@
 }
 
 .nav__header {
-  color: #ed7d31;
+  color: var(--color--primary);
   font-size: 3rem;
   font-weight: 900;
 }

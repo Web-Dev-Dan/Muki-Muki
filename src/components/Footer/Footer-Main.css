@@ -1,0 +1,12 @@
+/* --- Footer --- */
+
+.footer {
+  background-color: var(--color--primary);
+  height: 6rem;
+}
+
+.footer__text {
+  color: var(--color--white);
+  font-size: 1.4rem;
+  text-align: center;
+}
