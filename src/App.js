@@ -47,12 +47,12 @@ function App() {
       <Navigation />
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/fitness" element={<Fitness />} />
-        <Route path="/diet" element={<Diet />} />
-        <Route path="/hydration" element={<Hydration />} />
-        <Route path="/well-being" element={<WellBeing />} />
-        <Route path="/my-calendar" element={<MyCalendar />} />
+        <Route path="/" element={<Home authed={true} />} />
+        <Route path="/fitness" element={<Fitness authed={true} />} />
+        <Route path="/diet" element={<Diet authed={true} />} />
+        <Route path="/hydration" element={<Hydration authed={true} />} />
+        <Route path="/well-being" element={<WellBeing authed={true} />} />
+        <Route path="/my-calendar" element={<MyCalendar authed={true} />} />
       </Routes>
 
       {/* <form>
